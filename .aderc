@@ -1,0 +1,10 @@
+export ADE_DOCKER_RUN_ARGS="--cap-add=SYS_PTRACE --privileged -v /dev/snd:/dev/snd -v ${HOME}/.Xauthority:${HOME}/.Xauthority:ro -e XAUTHORITY=${HOME}/.Xauthority"
+export ADE_GITLAB=gitlab.danz.eus
+export ADE_REGISTRY=gitlab.danz.eus:5044
+export ADE_IMAGES="
+	gitlab.danz.eus:5044/hazi/proiektuak/valu3s/ade/ade_base:0.1
+	gitlab.danz.eus:5044/hazi/proiektuak/valu3s/ade/ade_vscode:1.61.2
+	gitlab.danz.eus:5044/hazi/proiektuak/valu3s/ade/ade-pycharm:2021.3.2
+"
+
+
